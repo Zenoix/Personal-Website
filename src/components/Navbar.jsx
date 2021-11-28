@@ -11,16 +11,16 @@ const Navbar = () => {
 
   return (
     <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-4 text-lg'>
-      <div className="px-6 md:px-8">
-        <h2 className="font-bold">
-          <NavLink to='/'>jeffwang.py</NavLink>
-        </h2>
+      <div className='px-6 md:px-8'>
+        <h2 className='font-bold'>jeffwang.py</h2>
       </div>
-      <div className='h-6 w-6 cursor-pointer md:hidden block'
-        onClick={handleToggle}><HamburgerIcon
-        
-      /></div>
-      
+      <div
+        className='h-6 w-6 cursor-pointer md:hidden block'
+        onClick={handleToggle}
+      >
+        <HamburgerIcon />
+      </div>
+
       <div
         className={`${
           isHamburgerActive ? "hidden" : ""
@@ -35,22 +35,41 @@ const Navbar = () => {
               md:pt-0'
         >
           <li>
-            <NavLink className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink' to='/'>
+            <NavLink
+              
+              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              activeClassName='active'
+              to='/'
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink' to='/about'>
+            <NavLink
+              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              activeClassName='active'
+              to='/about'
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink' to='/projects'>
+            <NavLink
+              
+              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              activeClassName='active'
+              to='/projects'
+            >
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink' to='/contacts'>
+            <NavLink
+              
+              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              activeClassName='active'
+              to='/contacts'
+            >
               Contacts
             </NavLink>
           </li>

@@ -16,6 +16,10 @@ body {
   color: var(--main-text-color);
 }
 
+.active{
+  color: var(--blue-accent-color);
+}
+
 h1,
 h2,
 h3,
