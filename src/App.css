@@ -60,3 +60,24 @@ footer{
   color: #e0e0e0;
 }
 
+.waves{
+  background-position: center;
+  background-repeat: none;
+  width:100vw;
+  height: 100px;
+}
+
+.waves-small{
+  aspect-ratio: 768/100;
+  background-image: url('./assets/layered-waves-768.svg');
+}
+
+.waves-reg{
+  aspect-ratio: 1920/100;
+  background-image: url('./assets/layered-waves-1920.svg');
+}
+
+.waves-large{
+  aspect-ratio: 5120/100;
+  background-image: url('./assets/layered-waves-5120.svg');
+}
