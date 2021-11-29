@@ -10,15 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-4 text-lg'>
-      <div className='px-6 md:px-8'>
+    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg'>
+      <div className='px-6 md:px-8 md:ml-8'>
         <h2 className='font-bold'>jeffwang.py</h2>
       </div>
       <div
-        className='h-6 w-6 cursor-pointer md:hidden block'
+        className='h-6 w-6 cursor-pointer md:hidden block mx-6'
         onClick={handleToggle}
       >
-        <HamburgerIcon />
+        <HamburgerIcon/>
       </div>
 
       <div
@@ -37,7 +37,7 @@ const Navbar = () => {
           <li>
             <NavLink
               
-              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
               activeClassName='active'
               to='/'
             >
@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
               activeClassName='active'
               to='/about'
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
           <li>
             <NavLink
               
-              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
               activeClassName='active'
               to='/projects'
             >
@@ -66,7 +66,7 @@ const Navbar = () => {
           <li>
             <NavLink
               
-              className='px-6 md:p-4 py-2 block font-normal hover:text-accent-pink'
+              className='px-6 bg-background-tertiary md:p-4 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
               activeClassName='active'
               to='/contacts'
             >
