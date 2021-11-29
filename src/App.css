@@ -69,15 +69,33 @@ footer{
 
 .waves-small{
   aspect-ratio: 768/100;
-  background-image: url('./assets/layered-waves-768.svg');
+  background-image: url("./assets/layered-waves-768.svg");
 }
 
 .waves-reg{
   aspect-ratio: 1920/100;
-  background-image: url('./assets/layered-waves-1920.svg');
+  background-image: url("./assets/layered-waves-1920.svg");
 }
 
 .waves-large{
   aspect-ratio: 5120/100;
-  background-image: url('./assets/layered-waves-5120.svg');
+  background-image: url("./assets/layered-waves-5120.svg");
+}
+
+.term-buttons{
+  background-color: #303644;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.terminal{
+  background-color: #1C1E26;
+  border-radius: 11px;
+  height: 10px;
+  width: 100%;
+}
+
+#term-close{
+  background-color: #BF616A;
+  border-radius: 50%;
 }
