@@ -9,6 +9,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   color: var(--main-text-color);
 }
 
-.active{
+.active {
   color: var(--blue-accent-color);
 }
 
@@ -26,7 +27,8 @@ h3,
 h4,
 h5,
 h6,
-nav {
+nav,
+.terminal {
   font-family: "Rubik", sans-serif;
 }
 
@@ -41,7 +43,7 @@ nav,
 }
 
 nav {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 nav a {
@@ -49,10 +51,8 @@ nav a {
   color: var(--main-text-color);
 }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.25));
+footer {
+  filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .footer-bar {
@@ -60,24 +60,84 @@ footer{
   color: #e0e0e0;
 }
 
-.waves{
+.waves {
   background-position: center;
   background-repeat: none;
-  width:100vw;
+  width: 100vw;
   height: 100px;
 }
 
-.waves-small{
+.waves-small {
   aspect-ratio: 768/100;
-  background-image: url('./assets/layered-waves-768.svg');
+  background-image: url("./assets/layered-waves-768.svg");
 }
 
-.waves-reg{
+.waves-reg {
   aspect-ratio: 1920/100;
-  background-image: url('./assets/layered-waves-1920.svg');
+  background-image: url("./assets/layered-waves-1920.svg");
 }
 
-.waves-large{
+.waves-large {
   aspect-ratio: 5120/100;
-  background-image: url('./assets/layered-waves-5120.svg');
+  background-image: url("./assets/layered-waves-5120.svg");
+}
+
+.terminal-container {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+
+.term-handle {
+  background-color: #303644;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.terminal {
+  background-color: #1c1e26;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  font-size: 6vw;
+}
+
+.path {
+  color: var(--blue-accent-color);
+}
+
+.prompt {
+  color: var(--pink-accent-color);
+  font-size: 4vw;
+}
+
+@media screen and (max-width: 358px) {
+  .term-text {
+    width: 123px;
+    margin-right: 1rem;
+  }
+}
+
+#term-min,
+#term-max,
+#term-close {
+  height: 1rem;
+  width: 1rem;
+}
+
+#term-close {
+  background-color: #bf616a;
+  border-radius: 50%;
+}
+
+
+.sep{
+  box-sizing: content-box;
+  width: 10vw;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(91.05deg, #CA78E3 8.23%, #6FEBFE 95.66%);
+  border-image-slice: 1;
+}
+
+.button{
+  width: fit-content;
+  border-radius: 6px;
 }

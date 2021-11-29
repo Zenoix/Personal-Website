@@ -10,12 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg'>
-      <div className='px-6 md:px-8 md:ml-8'>
-        <h2 className='font-bold'>jeffwang.py</h2>
+    <nav className="flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg">
+      <div className="px-6 md:px-8 md:ml-8">
+        <h2 className="font-bold">jeffwang.py</h2>
       </div>
       <div
-        className='h-6 w-6 cursor-pointer md:hidden block mx-6'
+        className="h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6"
         onClick={handleToggle}
       >
         <HamburgerIcon/>
@@ -27,28 +27,28 @@ const Navbar = () => {
         }  w-full md:flex md:items-center md:w-auto`}
       >
         <ul
-          className='
+          className="
               pt-4
               text-base
               md:flex
               md:justify-between 
-              md:pt-0'
+              md:pt-0"
         >
           <li>
             <NavLink
               
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-              activeClassName='active'
-              to='/'
+              className="px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary"
+              activeClassName="active"
+              to="/"
             >
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-              activeClassName='active'
-              to='/about'
+              className="px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary"
+              activeClassName="active"
+              to="/about"
             >
               About
             </NavLink>
@@ -56,9 +56,9 @@ const Navbar = () => {
           <li>
             <NavLink
               
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-              activeClassName='active'
-              to='/projects'
+              className="px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary"
+              activeClassName="active"
+              to="/projects"
             >
               Projects
             </NavLink>
@@ -66,9 +66,9 @@ const Navbar = () => {
           <li>
             <NavLink
               
-              className='px-6 bg-background-tertiary md:p-4 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
-              activeClassName='active'
-              to='/contacts'
+              className="px-6 bg-background-tertiary md:p-4 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary"
+              activeClassName="active"
+              to="/contacts"
             >
               Contacts
             </NavLink>
