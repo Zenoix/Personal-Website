@@ -28,12 +28,14 @@ h4,
 h5,
 h6,
 nav,
-.terminal {
+.terminal
+{
   font-family: "Rubik", sans-serif;
 }
 
 p,
-footer {
+footer,
+.button-text {
   font-family: "Inter", sans-serif;
 }
 
@@ -52,6 +54,7 @@ nav a {
 }
 
 footer {
+  bottom:0;
   filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -108,13 +111,6 @@ footer {
   font-size: 4vw;
 }
 
-@media screen and (max-width: 358px) {
-  .term-text {
-    width: 123px;
-    margin-right: 1rem;
-  }
-}
-
 #term-min,
 #term-max,
 #term-close {
@@ -127,19 +123,59 @@ footer {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 358px) {
+  .term-text {
+    width: 123px;
+    margin-right: 1rem;
+  }
+}
 
-.sep{
+LandingCards:last-of-type{
+  margin-bottom: 0;
+}
+
+.sep {
   box-sizing: content-box;
   width: 10vw;
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(91.05deg, #CA78E3 8.23%, #6FEBFE 95.66%);
+  border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
   border-image-slice: 1;
 }
 
-.button{
+.button {
   width: fit-content;
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
   color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-xl {
+    font-size: 16px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .path,
+  .prompt,
+  .terminal {
+    font-size: 54px;
+  }
+
+  .home-terminal-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sep {
+    width: 4vw;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
+    border-image-slice: 1;
+  }
 }
