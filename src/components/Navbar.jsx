@@ -15,7 +15,7 @@ const Navbar = () => {
         <h2 className="font-bold">jeffwang.py</h2>
       </div>
       <div
-        className="h-6 w-6 cursor-pointer md:hidden block mx-6"
+        className="h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6"
         onClick={handleToggle}
       >
         <HamburgerIcon/>
