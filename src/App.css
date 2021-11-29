@@ -127,17 +127,16 @@ footer {
   border-radius: 50%;
 }
 
-
-.sep{
+.sep {
   box-sizing: content-box;
   width: 10vw;
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(91.05deg, #CA78E3 8.23%, #6FEBFE 95.66%);
+  border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
   border-image-slice: 1;
 }
 
-.button{
+.button {
   width: fit-content;
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));

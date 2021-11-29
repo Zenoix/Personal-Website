@@ -12,7 +12,12 @@ const Terminal = () => {
       </div>
       <div className='terminal px-2 py-8 flex justify-center font-bold'>
         <span className='path font-normal pr-3 -mt-2'>~</span>
-        <span className='prompt font-normal mt-2 px-3 pl-0'>➜</span> <span className="term-text"><h1 className="inline">Welcome to <br></br>Jeff Wang's Website</h1></span>
+        <span className='prompt font-normal mt-2 px-3 pl-0'>➜</span>{" "}
+        <span className='term-text'>
+          <h1 className='inline'>
+            Welcome to <br></br>Jeff Wang's Website
+          </h1>
+        </span>
       </div>
     </div>
   );
