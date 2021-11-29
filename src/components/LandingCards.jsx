@@ -3,11 +3,11 @@ import Button from "./Button";
 
 const LandingCards = ({ heading, content, buttonName, page }) => {
   return (
-    <div className='landing-card flex flex-col mt-6 mb-8'>
-      <h2 className='landing-heading text-xl mb-1'>{heading}</h2>
+    <div className='landing-card flex flex-col mb-8 lg:mb-4'>
+      <h2 className='landing-heading text-xl lg:text-base mb-1'>{heading}</h2>
       <hr className='sep' />
-      <p className='my-4 leading-6'>{content}</p>
-      <Button buttonName={buttonName} page={page} />
+      <p className='my-4 lg:my-2 mb-2 leading-6 lg:leading-5'>{content}</p>
+      <div className="md:flex md:justify-center"><Button buttonName={buttonName} page={page} /></div>
     </div>
   );
 };

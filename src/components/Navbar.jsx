@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg'>
+    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg mb-8'>
       <div className='px-6 md:px-8 md:ml-8'>
         <h2 className='font-bold'>jeffwang.py</h2>
       </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
         >
           <li>
             <NavLink
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
               activeClassName='active'
               to='/'
             >
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
               activeClassName='active'
               to='/about'
             >
@@ -54,7 +54,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className='px-6 bg-background-tertiary md:p-4 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
               activeClassName='active'
               to='/projects'
             >
@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className='px-6 bg-background-tertiary md:p-4 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
+              className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
               activeClassName='active'
               to='/contacts'
             >
