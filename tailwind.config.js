@@ -13,6 +13,7 @@ module.exports = {
       "accent-blue": "#70ECFF",
       "accent-pink": "#ca78e3",
       "text-white": "#f1f2f9",
+      "text-black": "#ffffff",
       "background-main": "#121212",
       "background-secondary": "#1f1f1f",
       "background-tertiary": "#171717",
