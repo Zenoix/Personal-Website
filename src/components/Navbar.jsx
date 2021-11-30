@@ -10,68 +10,67 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg lg:absolute'>
-      <div className='px-6 md:px-8 md:ml-8'>
-        <h2 className='font-bold'>jeffwang.py</h2>
-      </div>
-      <div
-        className='h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6'
-        onClick={handleToggle}
-      >
-        <HamburgerIcon />
-      </div>
-
-      <div
-        className={`${
-          isHamburgerActive ? "hidden" : ""
-        }  w-full md:flex md:items-center md:w-auto`}
-      >
-        <ul
-          className='
+    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg lg:absolute 3xl:justify-center'>
+        <div className='px-6 md:px-8 md:ml-8 3xl:mr-96'>
+          <h2 className='font-bold 3xl:mr-60'>jeffwang.py</h2>
+        </div>
+        <div
+          className='h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6'
+          onClick={handleToggle}
+        >
+          <HamburgerIcon />
+        </div>
+        <div
+          className={`${
+            isHamburgerActive ? "hidden" : ""
+          }  w-full md:flex md:items-center md:w-auto 3xl:ml-96`}
+        >
+          <ul
+            className='
               pt-4
               text-base
               md:flex
               md:justify-between 
               md:pt-0'
-        >
-          <li>
-            <NavLink
-              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
-              activeClassName='active'
-              to='/'
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
-              activeClassName='active'
-              to='/about'
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
-              activeClassName='active'
-              to='/projects'
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
-              activeClassName='active'
-              to='/contacts'
-            >
-              Contacts
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+          >
+            <li>
+              <NavLink
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm 3xl:ml-54'
+                activeClassName='active'
+                to='/'
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                activeClassName='active'
+                to='/about'
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                activeClassName='active'
+                to='/projects'
+              >
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                activeClassName='active'
+                to='/contacts'
+              >
+                Contacts
+              </NavLink>
+            </li>
+          </ul>
+        </div>
     </nav>
   );
 };
