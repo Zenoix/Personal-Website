@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg mb-8'>
+    <nav className='flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg lg:fixed'>
       <div className='px-6 md:px-8 md:ml-8'>
         <h2 className='font-bold'>jeffwang.py</h2>
       </div>

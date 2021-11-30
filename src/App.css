@@ -165,12 +165,9 @@ LandingCards:last-of-type{
     font-size: 54px;
   }
 
-  .home-terminal-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  .home-main-div{
+    transform: translateY(-5%);
   }
-
   .sep {
     width: 4vw;
     border-width: 3px;
