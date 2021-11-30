@@ -13,12 +13,12 @@ const Home = () => {
 
   return (
     <div className='home-main-div lg:flex lg:flex-col lg:justify-center lg:h-screen lg:w-screen'>
-      <main className='flex flex-col justify-center lg:grid lg:grid-cols-12 lg:mx-20 lg:items-center lg:gap-x-10'>
-        <div className='lg:col-start-1 lg:col-span-6 lg:block'>
+      <main className='flex flex-col justify-center lg:grid lg:grid-cols-12 lg:mx-20 lg:items-center lg:gap-x-10 3xl:gap-x-6 3xl:mx-60'>
+        <div className='lg:col-start-1 lg:col-span-6 lg:block 3xl:justify-self-end'>
           <Terminal />
         </div>
 
-        <section className='mx-12 lg:mx-0 lg:my-0 lg:col-start-7 lg:col-span-6 lg:block'>
+        <section className='mx-12 lg:mx-0 lg:my-0 lg:col-start-7 lg:col-span-6 lg:block lg:max-w-screen-md'>
           <LandingCards
             heading="Hi!, I'm Jeff"
             content={aboutContent}
