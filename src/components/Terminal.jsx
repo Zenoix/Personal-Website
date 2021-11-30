@@ -14,9 +14,7 @@ const Terminal = () => {
         <span className='path font-normal pr-2 md:pr-3 -mt-1 md:-mt-2'>~</span>
         <span className='prompt font-normal mt-2 px-3 pl-0 md:pr-5 lg:pr-8'>➜</span>{" "}
         <span className='term-text'>
-          <h1 className='inline'>
-            Welcome to <br></br>Jeff Wang's Website
-          </h1>
+            Welcome to Jeff Wang's Website
         </span>
       </div>
     </div>
