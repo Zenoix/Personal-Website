@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 md:py-0 px-0 text-lg lg:absolute 3xl:justify-center'>
+    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 lg:py-3 px-0 text-lg lg:absolute 3xl:justify-center'>
         <div className='px-6 md:px-8 md:ml-8 3xl:mr-96'>
           <h2 className='font-bold 3xl:mr-60'>jeffwang.py</h2>
         </div>
