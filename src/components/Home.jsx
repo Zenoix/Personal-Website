@@ -13,14 +13,11 @@ const Home = () => {
 
   return (
     <div className='home-main-div flex lg:justify-center'>
-      <main className='flex flex-col lg:max-w-screen-lg'>
-        <div className=''>
-          <Terminal />
-        </div>
-
+      <main className='flex flex-col lg:max-w-screen-lg xl:max-w-screen-xl 2xl:xl:max-w-screen-2xl'>
+        <Terminal />
         <section className='mx-12'>
           <LandingCards
-            heading="Hi!, I'm Jeff"
+            heading="A Bit About Me"
             content={aboutContent}
             buttonName='About Me'
             page='About'

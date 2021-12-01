@@ -99,9 +99,13 @@ footer {
   border-bottom-right-radius: 11px;
 }
 
-.term-text {
+.prompt, .term-text {
   font-family: "Fira Code", monospace;
   position: relative;
+}
+
+.prompt{
+  color: "#29D398"
 }
 
 
@@ -135,7 +139,7 @@ footer {
   color: var(--blue-accent-color);
 }
 
-.prompt {
+.reg-prompt {
   color: var(--pink-accent-color);
 }
 
@@ -150,13 +154,6 @@ footer {
 #term-close {
   background-color: #bf616a;
   border-radius: 50%;
-}
-
-@media screen and (max-width: 358px) {
-  .term-text {
-    width: 123px;
-    margin-right: 1rem;
-  }
 }
 
 LandingCards:last-of-type {
@@ -189,7 +186,7 @@ LandingCards:last-of-type {
   }
 
   .path,
-  .prompt,
+  .reg-prompt,
   .terminal {
     font-size: 54px;
   }

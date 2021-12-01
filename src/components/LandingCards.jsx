@@ -4,9 +4,9 @@ import Button from "./Button";
 const LandingCards = ({ heading, content, buttonName, page }) => {
   return (
     <div className='landing-card flex flex-col mb-8'>
-      <h2 className='landing-heading text-xl mb-1'>{heading}</h2>
+      <h2 className='landing-heading text-base mb-1'>{heading}</h2>
       <hr className='sep' />
-      <p className='my-4 mb-2 leading-6'>{content}</p>
+      <p className='my-4 mb-2 text-sm'>{content}</p>
       <div className="md:flex md:justify-center"><Button buttonName={buttonName} page={page} /></div>
     </div>
   );
