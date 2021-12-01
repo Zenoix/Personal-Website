@@ -97,7 +97,6 @@ footer {
   background-color: #1c1e26;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-  font-size: 6vw;
 }
 
 .term-text {
@@ -138,7 +137,6 @@ footer {
 
 .prompt {
   color: var(--pink-accent-color);
-  font-size: 4vw;
 }
 
 

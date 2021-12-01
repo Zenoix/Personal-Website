@@ -12,8 +12,8 @@ const Home = () => {
     "I am available to be contacted on a wide range of platforms and for internships or job opportunities. You can find all my contact information and CV by clicking on the 'Contacts' button below.";
 
   return (
-    <div className='home-main-div'>
-      <main className='flex flex-col justify-center'>
+    <div className='home-main-div flex lg:justify-center'>
+      <main className='flex flex-col lg:max-w-screen-lg'>
         <div className=''>
           <Terminal />
         </div>

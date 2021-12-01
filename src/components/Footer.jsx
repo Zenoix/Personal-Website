@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className='w-full mt-0 lg:absolute'>
+    <footer className='w-full mt-0'>
       <div className='waves waves-small md:hidden'></div>
       <div className='hidden waves waves-reg md:block 3xl:hidden'></div>
       <div className='hidden waves waves-large 3xl:block'></div>
