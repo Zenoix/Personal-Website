@@ -12,12 +12,14 @@ const Home = () => {
     "I am available to be contacted on a wide range of platforms and for internships or job opportunities. You can find all my contact information and CV by clicking on the 'Contacts' button below.";
 
   return (
-    <div className='home-main-div flex lg:justify-center'>
-      <main className='flex flex-col lg:max-w-screen-lg xl:max-w-screen-xl 2xl:xl:max-w-screen-2xl'>
-        <Terminal />
-        <section className='mx-12'>
+    <div className='home-main-div flex lg:justify-center lgh-screen'>
+      <main className='flex flex-col lg:grid lg:grid-cols-2 lg:gap-10 lg:mx-20 lg:items-center lg:justify-items-end'>
+        <div>
+          <Terminal />
+        </div>
+        <section className='mx-8 sm:mx-12 md:mx-16 lg:m-0 lg:mt-4 lg:max-w-screen-sm'>
           <LandingCards
-            heading="A Bit About Me"
+            heading='A Bit About Me'
             content={aboutContent}
             buttonName='About Me'
             page='About'
