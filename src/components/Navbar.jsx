@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 lg:py-3 px-0 text-lg lg:absolute 3xl:justify-center'>
-        <div className='px-6 md:px-8 md:ml-8 3xl:mr-96'>
-          <h2 className='font-bold 3xl:mr-60'>jeffwang.py</h2>
+    <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 px-0 text-lg'>
+        <div className='px-6 md:px-8 md:ml-8'>
+          <h2 className='font-bold'>jeffwang.py</h2>
         </div>
         <div
           className='h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6'
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div
           className={`${
             isHamburgerActive ? "hidden" : ""
-          }  w-full md:flex md:items-center md:w-auto 3xl:ml-96`}
+          }  w-full md:flex md:items-center md:w-auto`}
         >
           <ul
             className='
@@ -35,7 +35,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm 3xl:ml-54'
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
                 activeClassName='active'
                 to='/'
               >
@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
                 activeClassName='active'
                 to='/about'
               >
@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
                 activeClassName='active'
                 to='/projects'
               >
@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary lg:text-sm'
+                className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
                 activeClassName='active'
                 to='/contacts'
               >

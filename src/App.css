@@ -181,7 +181,7 @@ LandingCards:last-of-type {
   color: black;
 }
 
-@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
   .text-xl {
     font-size: 16px;
   }
@@ -206,4 +206,4 @@ LandingCards:last-of-type {
     border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
     border-image-slice: 1;
   }
-}
+}*/

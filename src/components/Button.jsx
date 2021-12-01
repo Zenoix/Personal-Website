@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Button = ({ buttonName, page }) => {
   return (
-    <div className='button px-8 md:px-6 py-2 lg:py-1.5 bg-accent-pink text-center inline-block'>
+    <div className='button px-8 md:px-6 py-2 bg-accent-pink text-center inline-block'>
       <NavLink className='font-semibold' to={`/${page}`}>
         <span className="button-text">{buttonName}</span>
       </NavLink>
