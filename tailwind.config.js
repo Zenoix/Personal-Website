@@ -2,10 +2,27 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {
-      screens: {
-        "3xl": "1921px",
-      },
+    screens: {
+      "2xs": "320px",
+      // => @media (min-width: 320px) { ... }
+
+      xs: "425px",
+      // => @media (min-width: 425px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+
+      "2xl": "1921px",
+      // => @media (min-width: 1921px) { ... }
     },
     colors: {
       transparent: "transparent",

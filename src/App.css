@@ -1,3 +1,7 @@
+/*
+* === General ===
+*/
+
 :root {
   --main-bg-color: #121212;
   --main-text-color: #f1f2f9;
@@ -12,14 +16,23 @@
   overflow-x: hidden;
 }
 
+/*
+* === Background Colors ===
+*/
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
 
-.active {
-  color: var(--blue-accent-color);
+nav,
+.footer-bar {
+  background-color: var(--secondary-bg-color);
 }
+
+/*
+* === Fonts ===
+*/
 
 h1,
 h2,
@@ -37,10 +50,9 @@ footer,
   font-family: "Inter", sans-serif;
 }
 
-nav,
-.footer-bar {
-  background-color: var(--secondary-bg-color);
-}
+/*
+* === Nav Bar ===
+*/
 
 nav {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
@@ -50,6 +62,15 @@ nav a {
   text-decoration: none;
   color: var(--main-text-color);
 }
+
+.active {
+  /* For actively selected page */
+  color: var(--blue-accent-color);
+}
+
+/*
+* === Footer ===
+*/
 
 footer {
   bottom: 0;
@@ -61,31 +82,42 @@ footer {
   color: #e0e0e0;
 }
 
+/*
+* — Waves —
+*/
+
 .waves {
   background-position: center;
   background-repeat: none;
   width: 100vw;
-  height: 100px;
+  
 }
 
 .waves-small {
   aspect-ratio: 768/100;
   background-image: url("./assets/layered-waves-768.svg");
+  height: 100px;
 }
 
 .waves-reg {
   aspect-ratio: 1920/100;
   background-image: url("./assets/layered-waves-1920.svg");
+  height: 75px;
 }
 
 .waves-large {
   aspect-ratio: 5120/100;
   background-image: url("./assets/layered-waves-5120.svg");
+  height: 50px;
 }
 
-.terminal-container {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
-}
+/*
+* === Landing Page Terminal ===
+*/
+
+/*
+* - Terminal Handlebar and Buttons -
+*/
 
 .term-handle {
   background-color: #303644;
@@ -93,18 +125,49 @@ footer {
   border-top-right-radius: 11px;
 }
 
+#term-min,
+#term-max,
+#term-close {
+  height: 1rem;
+  width: 1rem;
+}
+
+#term-close {
+  background-color: #bf616a;
+  border-radius: 50%;
+}
+
+/*
+* - Terminal Text Area -
+*/
+
 .terminal {
   background-color: #1c1e26;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-  font-size: 6vw;
 }
 
-.term-text {
+.prompt, .term-text {
   font-family: "Fira Code", monospace;
   position: relative;
 }
 
+.prompt{
+  color: #29D398
+}
+
+.path {
+  color: var(--blue-accent-color);
+}
+
+.reg-prompt {
+  color: var(--pink-accent-color);
+}
+
+
+/*
+* — Typing Caret animation —
+*/
 
 @keyframes blink {
   to {
@@ -132,42 +195,12 @@ footer {
   }
 }
 
-.path {
-  color: var(--blue-accent-color);
-}
-
-.prompt {
-  color: var(--pink-accent-color);
-  font-size: 4vw;
-}
-
-
-#term-min,
-#term-max,
-#term-close {
-  height: 1rem;
-  width: 1rem;
-}
-
-#term-close {
-  background-color: #bf616a;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 358px) {
-  .term-text {
-    width: 123px;
-    margin-right: 1rem;
-  }
-}
-
-LandingCards:last-of-type {
-  margin-bottom: 0;
-}
+/*
+* === Landing Page Content ===
+*/
 
 .sep {
   box-sizing: content-box;
-  width: 10vw;
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
@@ -181,29 +214,7 @@ LandingCards:last-of-type {
   color: black;
 }
 
-@media screen and (min-width: 1024px) {
-  .text-xl {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .path,
-  .prompt,
-  .terminal {
-    font-size: 54px;
-  }
-
-  .home-main-div {
-    transform: translateY(-5%);
-  }
-  .sep {
-    width: 4vw;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(91.05deg, #ca78e3 8.23%, #6febfe 95.66%);
-    border-image-slice: 1;
-  }
+.landing-card:last-child{
+  margin-bottom: 0;
 }
+
