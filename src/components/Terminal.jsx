@@ -4,7 +4,7 @@ import Close from "@material-ui/icons/Close";
 
 const Terminal = () => {
   return (
-    <div className='terminal-container filter drop-shadow-lg mx-6 my-6 sm:mx-12 sm:my-8 md:mx-16 lg:m-0'>
+    <div className='terminal-container filter drop-shadow-lg mx-6 my-6 sm:mx-12 sm:my-8 md:mx-16 lg:m-0 overflox-hidden'>
       <div className='term-handle flex justify-end p-2'>
         <Minus className='term-button mx-1' id='term-min' />
         <Add className='term-button mx-1' id='term-max' />

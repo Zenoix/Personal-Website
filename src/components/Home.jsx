@@ -12,7 +12,7 @@ const Home = () => {
     "I am available to be contacted on a wide range of platforms and for internships or job opportunities. You can find all my contact information and CV by clicking on the 'Contacts' button below.";
 
   return (
-    <div className='home-main-div flex lg:justify-center lgh-screen'>
+    <div className='home-main-div flex lg:justify-center'>
       <main className='flex flex-col lg:grid lg:grid-cols-2 lg:gap-10 lg:mx-20 lg:items-center lg:justify-items-end'>
         <div>
           <Terminal />

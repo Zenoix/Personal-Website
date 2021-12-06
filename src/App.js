@@ -13,18 +13,19 @@ import {
 
 function App() {
   return (
-  <Router>
-    <Navbar />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/projects' element={<Projects />} />
-      <Route path='/contacts' element={<Contacts />} />
-      <Route path='*' element={<NotFoundPage />} />
-    </Routes>
-    <Footer />
-  </Router>
-      
+    <div className="page-container">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contacts' element={<Contacts />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
