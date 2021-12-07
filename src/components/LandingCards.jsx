@@ -7,7 +7,7 @@ const LandingCards = ({ heading, content, buttonName, page }) => {
       <h2 className='landing-heading text-base xs:text-lg sm:text-xl mb-1'>
         {heading}
       </h2>
-      <hr className='sep w-16' />
+      <div className='sep w-16' />
       <p className='my-4 mb-2 text-sm leading-5 sm:text-base sm:leading-6'>
         {content}
       </p>

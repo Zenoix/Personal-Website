@@ -11,10 +11,10 @@ const Terminal = () => {
         <Close className='term-button mx-1 mr-2' id='term-close' />
       </div>
       <div className='terminal flex flex-row p-6 xs:justify-center xs:py-16 sm:py-24 lg:px-18 lg:py-24'>
-        <span className='overflow-hidden path block text-xl xs:text-3xl sm:text-4xl md:text-5xl md:px-4 lg:px-0 lg:text-4xl'>
+        <span className='overflow-hidden path relative -top-2 block text-2xl xs:text-4xl sm:text-5xl md:text-6xl xl:leading-snug sm:tracking-tight lg:tracking-tighter'>
           ~
         </span>
-        <span className='overflow-hidden reg-prompt block text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-4xl px-3'>
+        <span className='overflow-hidden reg-prompt relative -top-1 block text-2xl xs:text-4xl sm:text-5xl md:text-6xl xl:leading-snug sm:tracking-tight lg:tracking-tighter px-3'>
           ➜
         </span>
         <span className='term-text overflow-hidden block text-2xl xs:text-4xl sm:text-5xl md:text-6xl xl:leading-snug sm:tracking-tight lg:tracking-tighter'>
