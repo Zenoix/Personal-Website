@@ -11,66 +11,68 @@ const Navbar = () => {
 
   return (
     <nav className='z-50 flex flex-wrap items-center justify-between w-full py-3 px-0 text-lg'>
-        <div className='px-6 md:px-8 md:ml-8'>
+      <div className='px-6 md:px-8 md:ml-8'>
+        <NavLink style={{ color: "white" }} to='/'>
           <h2 className='font-bold'>jeffwang.py</h2>
-        </div>
-        <div
-          className='h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6'
-          onClick={handleToggle}
-        >
-          <HamburgerIcon />
-        </div>
-        <div
-          className={`${
-            isHamburgerActive ? "hidden" : ""
-          }  w-full md:flex md:items-center md:w-auto`}
-        >
-          <ul
-            className='
+        </NavLink>
+      </div>
+      <div
+        className='h-6 w-6 cursor-pointer overflow-hidden md:hidden block mx-6'
+        onClick={handleToggle}
+      >
+        <HamburgerIcon />
+      </div>
+      <div
+        className={`${
+          isHamburgerActive ? "hidden" : ""
+        }  w-full md:flex md:items-center md:w-auto`}
+      >
+        <ul
+          className='
               pt-4
               text-base
               md:flex
               md:justify-between 
               md:pt-0'
-          >
-            <li>
-              <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-                activeClassName='active'
-                to='/'
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-                activeClassName='active'
-                to='/about'
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
-                activeClassName='active'
-                to='/projects'
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
-                activeClassName='active'
-                to='/contacts'
-              >
-                Contacts
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        >
+          <li>
+            <NavLink
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              activeClassName='active'
+              to='/'
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              activeClassName='active'
+              to='/about'
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className='px-6 bg-background-tertiary md:p-3 py-2 block font-normal hover:text-accent-pink md:bg-background-secondary'
+              activeClassName='active'
+              to='/projects'
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className='px-6 bg-background-tertiary md:p-3 py-2 block md:mr-12 font-normal hover:text-accent-pink md:bg-background-secondary'
+              activeClassName='active'
+              to='/contacts'
+            >
+              Contacts
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
