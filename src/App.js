@@ -13,7 +13,6 @@ import {
 
 function App() {
   return (
-    <div className="page-container">
       <Router>
         <Navbar />
         <Routes>
@@ -25,7 +24,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </div>
   );
 }
 

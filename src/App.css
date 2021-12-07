@@ -18,6 +18,32 @@
 }
 
 /*
+* - Content sizes for footer - *
+*/
+
+.content{
+  min-height: calc(100vh - 228px);
+}
+
+@media screen and (min-width: 768px) {
+  .content{
+    min-height: calc(100vh - 235px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content{
+    min-height: calc(100vh - 195px);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .content{
+    min-height: calc(100vh - 220px);
+  }
+}
+
+/*
 * === Background Colors ===
 */
 
@@ -107,7 +133,7 @@ footer {
 .waves-large {
   aspect-ratio: 5120/100;
   background-image: url("./assets/layered-waves-5120.svg");
-  height: 50px;
+  height: 100px;
 }
 
 /*
