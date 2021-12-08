@@ -12,8 +12,35 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+/*
+* - Content sizes for footer - *
+*/
+
+.content{
+  min-height: calc(100vh - 228px);
+}
+
+@media screen and (min-width: 768px) {
+  .content{
+    min-height: calc(100vh - 235px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content{
+    min-height: calc(100vh - 195px);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .content{
+    min-height: calc(100vh - 220px);
+  }
 }
 
 /*
@@ -73,7 +100,6 @@ nav a {
 */
 
 footer {
-  bottom: 0;
   filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -90,7 +116,6 @@ footer {
   background-position: center;
   background-repeat: none;
   width: 100vw;
-  
 }
 
 .waves-small {
@@ -108,7 +133,7 @@ footer {
 .waves-large {
   aspect-ratio: 5120/100;
   background-image: url("./assets/layered-waves-5120.svg");
-  height: 50px;
+  height: 100px;
 }
 
 /*
@@ -147,13 +172,14 @@ footer {
   border-bottom-right-radius: 11px;
 }
 
-.prompt, .term-text {
+.prompt,
+.term-text {
   font-family: "Fira Code", monospace;
   position: relative;
 }
 
-.prompt{
-  color: #29D398
+.prompt {
+  color: #29d398;
 }
 
 .path {
@@ -163,7 +189,6 @@ footer {
 .reg-prompt {
   color: var(--pink-accent-color);
 }
-
 
 /*
 * — Typing Caret animation —
@@ -180,19 +205,17 @@ footer {
   }
 }
 
-@media screen and (min-width: 200px){
-  .term-text::after {
-    content: "";
-    position: absolute;
-    bottom: 0.25em;
-    margin-left: 0.15em;
-    margin-right: 0.15em;
-    height: 1em;
-    width: 0.15em;
-    background: white;
-    animation: blink 1.15s steps(5, start) infinite;
-    -webkit-animation: blink 1.15s steps(5, start) infinite;
-  }
+.term-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0.25em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+  height: 1em;
+  width: 0.15em;
+  background: white;
+  animation: blink 1.15s steps(5, start) infinite;
+  -webkit-animation: blink 1.15s steps(5, start) infinite;
 }
 
 /*
@@ -214,7 +237,6 @@ footer {
   color: black;
 }
 
-.landing-card:last-child{
+.landing-card:last-child {
   margin-bottom: 0;
 }
-
