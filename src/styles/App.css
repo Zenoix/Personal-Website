@@ -1,0 +1,50 @@
+/*
+* === General ===
+*/
+
+:root {
+  --main-bg-color: #121212;
+  --main-text-color: #f1f2f9;
+  --secondary-bg-color: #1f1f1f;
+  --pink-accent-color: #ca78e3;
+  --blue-accent-color: #70ecff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*
+* === Background Colors ===
+*/
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+nav,
+.footer-bar {
+  background-color: var(--secondary-bg-color);
+}
+
+/*
+* === Fonts ===
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}

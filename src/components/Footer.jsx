@@ -1,3 +1,5 @@
+import "../styles/Footer.css"
+
 const Footer = () => {
   return (
     <footer className='w-full mt-10 lg:m-0'>

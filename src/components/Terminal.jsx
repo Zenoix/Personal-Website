@@ -1,6 +1,7 @@
 import Minus from "@material-ui/icons/Remove";
 import Add from "@material-ui/icons/Add";
 import Close from "@material-ui/icons/Close";
+import "../styles/Terminal.css"
 
 const Terminal = () => {
   return (

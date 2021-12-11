@@ -1,0 +1,81 @@
+/*
+* === Landing Page Terminal ===
+*/
+
+/*
+* - Terminal Handlebar and Buttons -
+*/
+
+.term-handle {
+  background-color: #303644;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+#term-min,
+#term-max,
+#term-close {
+  height: 1rem;
+  width: 1rem;
+}
+
+#term-close {
+  background-color: #bf616a;
+  border-radius: 50%;
+}
+
+/*
+* - Terminal Text Area -
+*/
+
+.terminal {
+  background-color: #1c1e26;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.prompt,
+.term-text {
+  font-family: "Fira Code", monospace;
+  position: relative;
+}
+
+.prompt {
+  color: #29d398;
+}
+
+.path {
+  color: var(--blue-accent-color);
+}
+
+.reg-prompt {
+  color: var(--pink-accent-color);
+}
+
+/*
+* — Typing Caret animation —
+*/
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.term-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0.25em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+  height: 1em;
+  width: 0.15em;
+  background: white;
+  animation: blink 1.15s steps(5, start) infinite;
+  -webkit-animation: blink 1.15s steps(5, start) infinite;
+}

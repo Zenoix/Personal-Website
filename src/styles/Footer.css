@@ -1,0 +1,66 @@
+/*
+* === Footer ===
+*/
+
+footer {
+  filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.footer-bar {
+  text-align: center;
+  color: #e0e0e0;
+}
+
+/*
+* — Waves —
+*/
+
+.waves {
+  background-position: center;
+  background-repeat: none;
+  width: 100vw;
+}
+
+.waves-small {
+  aspect-ratio: 768/100;
+  background-image: url("../assets/layered-waves-768.svg");
+  height: 100px;
+}
+
+.waves-reg {
+  aspect-ratio: 1920/100;
+  background-image: url("../assets/layered-waves-1920.svg");
+  height: 75px;
+}
+
+.waves-large {
+  aspect-ratio: 5120/100;
+  background-image: url("../assets/layered-waves-5120.svg");
+  height: 100px;
+}
+
+/*
+* - Content sizes for footer - *
+*/
+
+.content {
+  min-height: calc(100vh - 228px);
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    min-height: calc(100vh - 235px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    min-height: calc(100vh - 195px);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .content {
+    min-height: calc(100vh - 220px);
+  }
+}

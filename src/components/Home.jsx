@@ -1,5 +1,6 @@
 import Terminal from "./Terminal";
 import LandingCards from "./LandingCards";
+import "../styles/Home.css"
 
 const Home = () => {
   const aboutContent =
