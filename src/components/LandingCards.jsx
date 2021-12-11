@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
+import "../styles/LandingCards.css"
 
 const LandingCards = ({ heading, content, buttonName, page }) => {
   return (

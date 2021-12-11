@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import "../styles/Button.css"
 
 const Button = ({ buttonName, page }) => {
   return (
@@ -12,8 +13,7 @@ const Button = ({ buttonName, page }) => {
 };
 
 Button.defaultProps = {
-  buttonName: "Unavailable",
-  page: "404",
+  buttonName: "Unavailable"
 };
 
 Button.propTypes = {
