@@ -15,7 +15,7 @@ import {
 function App() {
   return (
     <Router>
-      <WelcomePrompt />
+      <WelcomePrompt id="welcome-prompt"/>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
